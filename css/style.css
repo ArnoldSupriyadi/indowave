@@ -1,0 +1,135 @@
+body {
+  background-color: #f8f8f8;
+}
+
+header {
+  margin-top: -4.6rem;
+}
+
+.bg-left-header {
+  background: #ffffff;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.btn-contact-us {
+  background: #ff7966;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px 30px;
+  line-height: 22px;
+}
+
+.btn-call {
+  border: 1px solid #ff7966;
+  border-radius: 30px;
+  padding: 10px 30px;
+  color: #ff7966;
+  font-size: 14px;
+}
+
+.vector1 {
+  bottom: -10%;
+  left: -5%;
+}
+
+.title-header h1 {
+  color: #0097e7;
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.section-digital-agency {
+  background: #ffffff;
+}
+
+.title-branding h1 {
+  font-weight: 700;
+  font-size: 35px;
+  color: #0097e7;
+  line-height: 45px;
+  letter-spacing: 2px;
+}
+
+.content-branding p {
+  letter-spacing: 0.04rem;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.section-why-branding {
+  background: #ffffff;
+}
+
+.section-what-we-do {
+  background: #fff;
+}
+
+.section-grab {
+  background: #e1f5ff;
+}
+
+.title-grab h1 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 56px;
+}
+
+footer {
+  background: #ffffff;
+}
+
+/* CONTACT */
+.bg-left-contact {
+  background: #ffffff;
+  border-radius: 0px 50px 50px 0px;
+  height: 600px;
+}
+
+/* .container-bg {
+  background: #ffffff;
+} */
+
+.section-form {
+  margin-top: -4.6rem;
+}
+
+/* END OF CONTACT */
+@media (max-width: 575.98px) {
+  .title-header h1 {
+    font-size: 2rem;
+  }
+
+  header {
+    margin-top: -1rem;
+  }
+
+  .bg-left-header {
+    padding: 20px 0px;
+  }
+
+  .pdf-icon {
+    width: 5rem;
+  }
+
+  .credentials-right-side {
+    text-align: center;
+  }
+
+  .social-media p {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.05rem;
+  }
+
+  .section-form {
+    margin-top: 3rem;
+  }
+
+  /* footer {
+    margin-top: 1rem;
+  } */
+}
