@@ -8,25 +8,27 @@
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- custom  css -->
-    <title>Home</title>
+    <title>Contact</title>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="img/Indowave-Logo.svg" alt="indowave" class="img-fluid" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item mx-md-4">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
-            <li class="nav-item mx-md-4">
-              <a class="nav-link" href="contact">Contact</a>
+            <li class="nav-item mx-2">
+              <a class="nav-link active" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -34,65 +36,57 @@
     </nav>
     <!-- Navbar -->
 
-    <section class="section-form">
-      <div class="container-fluid container-bg">
-        <div class="row">
-          <div class="col-md-8 bg-left-contact d-flex justify-content-center align-items-center">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-10 offset-md-1">
-                  <form class="row g-3">
-                    <div class="col-md-6">
-                      <label for="inputEmail4" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="inputEmail4" />
-                    </div>
-                    <div class="col-md-6">
-                      <label for="inputPassword4" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="inputPassword4" />
-                    </div>
-                    <div class="col-12">
-                      <label for="inputAddress" class="form-label">Address</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" />
-                    </div>
-                    <div class="col-12">
-                      <label for="inputAddress2" class="form-label">Address 2</label>
-                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
-                    </div>
-                    <div class="col-md-6">
-                      <label for="inputCity" class="form-label">City</label>
-                      <input type="text" class="form-control" id="inputCity" />
-                    </div>
-                    <div class="col-md-4">
-                      <label for="inputState" class="form-label">State</label>
-                      <select id="inputState" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    <div class="col-md-2">
-                      <label for="inputZip" class="form-label">Zip</label>
-                      <input type="text" class="form-control" id="inputZip" />
-                    </div>
-                    <div class="col-12">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck" />
-                        <label class="form-check-label" for="gridCheck"> Check me out </label>
+    <main>
+      <section class="section-form">
+        <div class="container-fluid container-bg">
+          <div class="row">
+            <div class="col-md-8 bg-left-contact d-flex justify-content-center align-items-center">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 offset-md-3">
+                    <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                      <div class="row">
+                        <div class="col">
+                          <!-- Name -->
+                          <div class="form-group label-floating">
+                            <label class="control-label" for="name">Name</label>
+                            <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name" placeholder="Don carlo" />
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <!-- email -->
+                          <div class="form-group label-floating">
+                            <label class="control-label" for="email">Email</label>
+                            <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email" placeholder="example@yourdomain.com" />
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-12">
-                      <button type="submit" class="btn btn-primary">Sign in</button>
-                    </div>
-                  </form>
+                      <!-- Message -->
+                      <div class="form-group label-floating mt-4">
+                        <label for="message" class="control-label">Message</label>
+                        <textarea class="form-control" rows="2" id="message" name="message" required data-error="Write your message" placeholder="Hi there..."></textarea>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <a href="#" class="btn btn-send mt-4"
+                        >Send
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="ms-1 mb-1">
+                          <path d="M6.43746 7.97985L8.6109 5.97734M14 1L1 5L6.41667 8L9.66667 13L14 1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4 bg-right-header">
-            <img src="img/Vector6.svg" alt="indowave" class="img-fluid vector1 position-relative d-none d-sm-block" />
+            <div class="col-md-4 bg-right-header">
+              <img src="img/Vector6.svg" alt="indowave" class="img-fluid vector1 position-relative d-none d-sm-block" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer>
       <div class="container">
